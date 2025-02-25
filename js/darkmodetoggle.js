@@ -1,4 +1,4 @@
-
+// Function to calculate factorial
 function calculateFactorial(n) {
     let factorial = 1;
     for (let i = 1; i <= n; i++) {
@@ -7,7 +7,7 @@ function calculateFactorial(n) {
     return factorial;
 }
 
-
+// Handle "Enter" button click
 document.getElementById('enterButton').addEventListener('click', function() {
     const numberInput = document.getElementById('numberInput').value;
     const resultScreen = document.getElementById('resultScreen');
@@ -20,14 +20,14 @@ document.getElementById('enterButton').addEventListener('click', function() {
     }
 });
 
-
-const darkButton = document.querySelector('[data-bs-theme-value="dark"]');
-const lightButton = document.querySelector('[data-bs-theme-value="light"]');
+// Handle dark/light mode toggle
+const darkButton = document.querySelector('.btn-dark');
+const lightButton = document.querySelector('.btn-light');
 
 darkButton.addEventListener('click', function() {
-    document.body.setAttribute('data-bs-theme', 'dark');
+    document.body.setAttribute('data-theme', 'dark');
 });
 
 lightButton.addEventListener('click', function() {
-    document.body.setAttribute('data-bs-theme', 'light');
+    document.body.setAttribute('data-theme', 'light');
 });
